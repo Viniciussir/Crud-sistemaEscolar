@@ -1,0 +1,19 @@
+    
+    <div class="main">
+        <label style="font-weight: bold;">Aluno-incluir</label>
+
+        <div class="flex">
+            <div class="form">
+                <label>Nome:</label>
+                <input type="text"  class="input-label" [(ngModel)]="aluno.nome">
+            </div>
+
+            <div class="form">
+                <label>Data de Nascimento:</label>
+                <input type="date"  class="input-label" [(ngModel)]="aluno.dataNascimento">
+            </div>
+        </div>
+
+        <button (click)="incluir()" type="button">Salvar</button>
+        <a routerLink="/aluno"><button type="button">Voltar</button></a>
+    </div>

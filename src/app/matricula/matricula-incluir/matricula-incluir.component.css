@@ -1,0 +1,73 @@
+.main{
+    margin-top: 15px;
+    height: auto;
+    width: 800px;
+    border:1px solid #C6CDCD;
+    font-size:20px;
+    font-weight: normal;
+    color: black;
+}
+
+input, label{
+    display: block;
+    padding: 10px;
+    margin-left: 10px;
+}
+.table{
+    margin-left: 10px;
+}
+.select{
+    width: 350px;
+    padding: 0.5rem;
+    margin-left: 10px;
+}
+.select-title{
+    width: 780px;
+    padding: 0.5rem;
+    margin-left: 10px;
+}
+thead tr th{
+    border-top: 1px solid #C6CDCD;
+    border-bottom: 1px solid #C6CDCD;
+    padding: 0.5rem 0.5rem 0.5rem 11.3rem;
+}
+
+tbody tr th{
+    border-bottom: 1px solid #C6CDCD;
+    padding: 0.5rem 0.5rem 0.5rem 11.3rem;
+    color:#44484b;
+}
+
+.border-box{
+    margin: 10px;
+    border:1px solid #C6CDCD;
+}
+
+.input-name{
+    width: 800px;
+}
+
+button{
+    background-color: #3B6BEC; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    font-size: 21px;
+}
+.flex{
+    display: flex;
+}
+
+.form{
+    width: 400px;
+}
+.input-label{
+    width: 330px;
+}

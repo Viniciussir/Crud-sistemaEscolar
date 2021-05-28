@@ -1,0 +1,29 @@
+    
+    <div class="main">
+        <label style="font-weight: bold;">Curso-incluir</label>
+
+        <label>Nome:</label>
+        <input type="text" class="input-name" [(ngModel)]="curso.nome">
+
+        <label>Instrutor:</label>
+        <input type="text" class="input-name" [(ngModel)]="curso.instrutor">
+
+        <label>Local:</label>
+        <input type="text" class="input-name"[(ngModel)]="curso.local">
+
+        <div class="flex">
+            <div class="form">
+                <label>Carga Horaria:</label>
+                <input type="number"  class="input-label" [(ngModel)]="curso.cargaHoraria">
+            </div>
+
+            <div class="form">
+                <label>Data Inicio:</label>
+                <input type="date"  class="input-label" [(ngModel)]="curso.dataInicio">
+            </div>
+        </div>
+
+        <button type="button" (click)="incluir()" >Salvar</button>
+
+        <a routerLink="/curso"><button type="button">Voltar</button></a>
+    </div>

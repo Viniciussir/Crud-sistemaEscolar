@@ -1,0 +1,32 @@
+<div class="main">
+    <label>Aluno</label>
+    <label>Nome:</label>
+
+    <input type="texto" class="input-name" #alunoPesquisa>
+
+    <button type="button" (click)="consultar(alunoPesquisa.value)" >Pesquisa</button>
+
+    <div class="table">
+        <thead *ngIf = "listaAluno">
+            <tr>
+                <th></th>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Data de Nascimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor = "let aluno of listaAluno">
+                <th><input type="radio" name="inputRadio" value="{{ aluno.nome }}" (click)="selecionar(elementoSelecionado.value)" #elementoSelecionado></th>
+                <th>{{aluno.codigo}}</th>
+                <th>{{aluno.nome}}</th>
+                <th>{{aluno.dataNascimento | date: 'dd/MM/yyyy'}}</th>
+            </tr>
+        </tbody>
+
+        <a routerLink="incluir"> <button type="button">Incluir</button></a>
+        <a  (click)="navegarAlterar()"> <button type="button">Alterar</button></a>
+        <a  (click)="remover()"><button type="button">Excluir</button></a>
+    </div>
+</div>

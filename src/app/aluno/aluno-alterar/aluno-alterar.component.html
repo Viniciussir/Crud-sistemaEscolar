@@ -1,0 +1,19 @@
+    
+    <div class="main">
+        <label style="font-weight: bold;">Aluno-alterar</label>
+
+        <div class="flex">
+            <div class="form">
+                <label>Nome:</label>
+                <input type="text" class="input-label" [value]="aluno.nome">
+            </div>
+
+            <div class="form">
+                <label>Data de Nascimento:</label>
+                <input type="date"  class="input-label" [value]="aluno.dataNascimento | date: 'yyyy-MM-dd'">
+            </div>
+        </div>
+
+        <button type="button" (click)="alterar()">Salvar</button>
+        <a routerLink="/aluno"><button type="button">Voltar</button></a>
+    </div>

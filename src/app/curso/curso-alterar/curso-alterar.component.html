@@ -1,0 +1,28 @@
+    
+    <div class="main">
+        <label style="font-weight: bold;">Curso-alterar</label>
+
+        <label>Nome:</label>
+        <input type="text" class="input-name" [value]="curso.nome">
+
+        <label>Instrutor:</label>
+        <input type="text" class="input-name" [value]="curso.instrutor">
+
+        <label>Local:</label>
+        <input type="text" class="input-name" [value]="curso.local">
+
+        <div class="flex">
+            <div class="form">
+                <label>Carga Horaria:</label>
+                <input type="number"  class="input-label" [value]="curso.cargaHoraria">
+            </div>
+
+            <div class="form">
+                <label>Data Inicio:</label>
+                <input type="date"  class="input-label" [value]="curso.dataInicio | date: 'yyyy-MM-dd'">
+            </div>
+        </div>
+
+        <a><button type="button" (click)="alterar()" >Salvar</button></a>
+        <a routerLink="/curso"><button type="button">Voltar</button></a>
+    </div>

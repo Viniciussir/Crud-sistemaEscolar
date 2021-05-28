@@ -1,0 +1,57 @@
+.main{
+    margin-top: 15px;
+    height: auto;
+    width: 800px;
+    border:1px solid #C6CDCD;
+    font-size:20px;
+    font-weight: normal;
+    color: black;
+}
+label:first-child{
+    font-weight: bold;
+}
+input, label{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-left: 15px;
+}
+.input-name{
+    width: 770px;
+}
+button{
+        background-color: #3B6BEC; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px 10px 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+}
+button:hover{
+    font-size: 21px;
+}
+.select{
+    width: 780px;
+    padding: 0.5rem;
+    margin-left: 10px;
+}
+.table{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 770px;
+}
+thead tr th{
+    border-top: 1px solid #C6CDCD;
+    border-bottom: 1px solid #C6CDCD;
+    padding: 10px 10px;
+    width: 780px;
+}
+
+tbody tr th{
+    border-bottom: 1px solid #C6CDCD;
+    color:#44484b;
+    padding: 10px 10px;
+}

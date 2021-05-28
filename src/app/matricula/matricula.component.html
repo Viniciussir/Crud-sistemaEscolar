@@ -1,0 +1,35 @@
+<div class="main">
+    <label>Matricula</label>
+    <label>Aluno:</label>
+
+    <select class="select"  #matriculaPesquisa>
+        <option>Selecione</option>
+        <option *ngFor = "let matricula of listaMatricula"> {{matricula.aluno.nome}} </option>
+    </select>
+
+    <button type="button" (click)="consultar(matriculaPesquisa.value)">Pesquisa</button>
+
+    <div class="table">
+        <thead *ngIf = "listaMatricula">
+            <tr>
+                <th></th>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th></th>
+            </tr>
+        </thead>
+    
+        <tbody>
+            <tr *ngFor = "let matricula of listaMatricula">
+                <th><input type="radio" name="inputRadio" value="{{ matricula.aluno }}" (click)="selecionar(elementoSelecionado.value)" #elementoSelecionado></th>
+                <th>{{matricula.aluno.codigo}}</th>
+                <th>{{matricula.aluno.nome}}</th>
+                <th></th>
+                
+            </tr>
+        </tbody>
+
+        <a routerLink="incluir"> <button type="button">Incluir</button></a>
+        <a (click)="remover()"><button type="button">Excluir</button></a>
+    </div>
+</div>
